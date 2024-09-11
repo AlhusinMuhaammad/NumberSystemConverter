@@ -67,7 +67,7 @@ main {
 }
 
 body {
-    background-image: url(/Dinary-Converter/img/gradient-navy-blue-digital-grid-wallpaper.jpg);
+    background-image: url(../img/gradient-navy-blue-digital-grid-wallpaper.jpg);
     background-position:center;
     background-size: cover;
     min-height: 100vh;
