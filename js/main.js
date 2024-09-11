@@ -81,7 +81,7 @@ function handleConversion(number, fromBase) {
     if (conversionMethod === "steWert" && (targetBase === 2 || targetBase === 16)) {
         convertToHexOrBinaryByPlaceValue(number, targetBase);
         baSt.innerText="Stellenwertigkeit"
-        info.innerText="Von Oben nach Unten lesen"
+        info.innerText="Von Oben nach Unten (ERGEBNIS) lesen"
     } else {
         convertByDivision(number, targetBase);
     }
