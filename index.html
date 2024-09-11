@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Dinary-Converter/css/style.css">
+    <script src="/Dinary-Converter/js/main.js" defer></script>
+    <title>binary sys converter</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="title">
+                <h1>Numeral system converter</h1>
+                <p> Binary, Hexadecimal, Decimal, Octal</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Wähle Zahlensystem</h2>
+        <div id="select-container">
+            <select id="from-select">
+                <option value="from-binary">Binärzahlen</option>
+                <option value="from-decimal">Dezimalzahlen</option>
+                <option value="from-hexadecimal">HexaDezimalzahlen</option>
+                <option value="from-octal">Oktalzahlen</option>
+            </select>
+            <span>to</span>
+            <select id="to-select">
+                <option value="to-binary">Binärzahlen</option>
+                <option value="to-decimal">Dezimalzahlen</option>
+                <option value="to-hexadecimal">HexaDezimalzahlen</option>
+                <option value="to-octal">Oktalzahlen</option>
+            </select>
+            <span>Algorithmus</span>
+            <select id="method">
+                <option value="basis">Division durch Basis</option>
+                <option value="steWert">Division durch Stellenwertigkeit</option>
+            </select>
+        </div>
+        <div id="input-container">
+            <input type="text" id="from-input" placeholder="Binärzahlen">
+            <span id="error"></span>
+        </div>
+        <button id="convert-button">Konvertieren</button>
+        <div class="calc">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nummer</th>
+                        <th>/</th>
+                        <th id="meth">Basis</th>
+                        <th>=</th>
+                        <th>Ergebnis</th>
+                        <th>Reste</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>÷</td>
+                        <td></td>
+                        <td>=</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="info" id="info"> Von Unten nach Oben  lesen!!</p>
+        <input type="text" id="to-input" placeholder="Binärzahlen" readonly>
+        <p class="downl">Für mehr info Hier PPX Datei heunterladen</p>
+        <a id="downloadBtn" href="/Dinary-Converter/files/Zahlensysteme.pptx" download="zahhlensysteme.pptx">HEUNTERLADEN</a>
+    </main>
+</body>
+</html>
