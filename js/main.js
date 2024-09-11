@@ -84,6 +84,7 @@ function handleConversion(number, fromBase) {
         info.innerText="Von Oben nach Unten (ERGEBNIS) lesen"
     } else {
         convertByDivision(number, targetBase);
+        baSt.innerText="Basis"
     }
 }
 
