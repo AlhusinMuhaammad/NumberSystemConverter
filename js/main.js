@@ -128,8 +128,7 @@ function convertToHexOrBinaryByPlaceValue(decimal, base) {
         let quotient = Math.floor(decimal / placeValue);
         let remainder = decimal % placeValue;
 
-        let digit = quotient < 10 ? quotient : String.fromCharCode(quotient + 55);
-
+        let digit = quotient;
         let newRow = document.createElement("tr");
         newRow.innerHTML = `
             <td>${decimal}</td>
@@ -139,6 +138,7 @@ function convertToHexOrBinaryByPlaceValue(decimal, base) {
             <td>${digit}</td>
             <td>${remainder}</td>
         `;
+        digit = quotient;< 10 ? quotient : String.fromCharCode(quotient + 55);
         tbody.appendChild(newRow);
 
         result += digit;
