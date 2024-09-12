@@ -6,7 +6,10 @@ const to = document.getElementById("to-input");
 const error = document.getElementById("error");
 const info = document.getElementById("info");
 const baSt = document.getElementById("meth")
+const calcInfo = document.getElementById("calc-info")
 info.style.display="none"
+calcInfo.style.display="none"
+
 
 let fromNS = "Binärzahlen", toNS = "Binärzahlen";
 let conversionMethod = "basis";
@@ -39,21 +42,25 @@ document.getElementById("convert-button").addEventListener("click", function () 
     let number, fromBase;
     switch (fromNS) {
         case "Binärzahlen":
+            calcInfo.style.display="none"
             showError("")
             fromBase = 2;
             if (!/^[01]+$/.test(fromValue)) return showError("Ungültige Binärzahlen") ;
             break;
         case "Dezimalzahlen":
+            calcInfo.style.display="block"
             showError("")
             fromBase = 10;
             if (!/^[0-9]+$/.test(fromValue)) return showError("Ungültige Dezimalzahlen");
             break;
         case "HexaDezimalzahlen":
+            calcInfo.style.display="none"
             showError("")
             fromBase = 16;
             if (!/^[0-9A-Fa-f]+$/.test(fromValue)) return showError("Ungültige HexaDezimalzahlen");
             break;
         case "Oktalzahlen":
+            calcInfo.style.display="none"
             showError("")
             fromBase = 8;
             if (!/^[0-7]+$/.test(fromValue)) return showError("Ungültige Oktalzahlen");
