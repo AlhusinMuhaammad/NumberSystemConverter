@@ -10,7 +10,6 @@ const calcInfo = document.getElementById("calc-info")
 info.style.display="none"
 calcInfo.style.display="block"
 
-
 let fromNS = "Binärzahlen", toNS = "Binärzahlen";
 let conversionMethod = "basis";
 
