@@ -8,7 +8,7 @@ const info = document.getElementById("info");
 const baSt = document.getElementById("meth")
 const calcInfo = document.getElementById("calc-info")
 info.style.display="none"
-calcInfo.style.display="none"
+calcInfo.style.display="block"
 
 
 let fromNS = "Binärzahlen", toNS = "Binärzahlen";
